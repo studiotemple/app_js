@@ -1,7 +1,7 @@
-const express = require('express');
-const app = express();
+var express = require('express');
+var app = express();
 
-app.get('/', (req, res) => {
+app.get('/', function(req, res){
   res.send('Hello, renz`s world');
 });
 app.listen(80, function(){
